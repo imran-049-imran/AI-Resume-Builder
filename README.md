@@ -1,49 +1,64 @@
-# AI-Resume-Builder
+# AI-Resume-Builder 
 
-A powerful AI-based Resume Generation backend built using Spring Boot, OpenAI API, and MySQL.
-This backend provides secure APIs.
+AI-Resume-Builder is a powerful backend service for automated resume generation.
+Built with Spring Boot, OpenAI API, and MySQL, it provides secure and scalable APIs to generate recruiter-ready resumes using advanced AI models.
 
 # Tech Stack
-
-Component	   Technology
-Backend     Framework	Spring Boot
-Security	  Spring Security + JWT
-AI Model	  OpenAI GPT-3.5 / GPT-4 API
-Database	  MySQL
-ORM	        Spring Data JPA
+Component	Technology
+Backend	Spring Boot
+Security	Spring Security + JWT
+AI Model	OpenAI GPT-3.5 / GPT-4 API
+Database	MySQL
+ORM	Spring Data JPA
 Build Tool	Maven
-
 ```
-Backend (Spring Boot) – Project Structure
+📂 Project Structure
+Code
 src/main/java/com/ai/resume/builder
 │
 ├── controller
-│   ├── ResumeController.java
+│   └── ResumeController.java
 │
 ├── service
-│   ├── ResumeService.java
-│   
+│   └── ResumeService.java
+│
 ├── repository
 │   ├── ResumeRepository.java
-│   ├── UserRepository.java
+│   └── UserRepository.java
 │
 ├── model
-│   ├── Resume.java
-│
+│   └── Resume.java
 │
 └── ResumeBuilderApplication.java
 ```
-
 ▶️ How to Run
-1️⃣ Clone the repository
+Clone the repository
+
+bash
 git clone https://github.com/YOUR_USERNAME/AI-Resume-Builder.git
 cd resume-ai-backend
+Install dependencies
 
-2️⃣ Install dependencies
+bash
 mvn clean install
+Run the project
 
-3️⃣ Run the project
+bash
 mvn spring-boot:run
+Access the backend
 
-4️⃣ Backend starts at:
+Code
 http://localhost:8080
+🔒 Security
+Authentication handled via Spring Security
+
+JWT-based token system for secure API access
+
+🌟 Features
+AI-powered resume generation using OpenAI GPT models
+
+Secure user authentication and authorization
+
+MySQL database integration for storing resumes and user data
+
+RESTful APIs for seamless integration with frontend applications
